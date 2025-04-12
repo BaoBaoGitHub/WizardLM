@@ -27,7 +27,7 @@ def generate_prompt(input):
 
 
 ### Instruction:
-Create a Python script for this problem:
+Create a Java code for this problem:
 {input}
 
 ### Response:"""
@@ -35,6 +35,16 @@ Create a Python script for this problem:
 
 
 def main():
+    """
+    主函数，用于生成代码补全结果。
+    
+    Args:
+        无
+    
+    Returns:
+        无
+    
+    """
     parser = argparse.ArgumentParser()
 
     parser.add_argument('--model', type=str, default='bigcode/starcoder', help="")
